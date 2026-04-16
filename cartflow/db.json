@@ -1,0 +1,74 @@
+{
+  "mens": [
+    {
+      "id": "",
+      "name": "",
+      "price": "",
+      "description": "",
+      "image": "",
+      "rating": "",
+      "category": ""
+    },
+    {
+      "name": "Shirt",
+      "price": "599",
+      "description": "jashabsahshbhab",
+      "image": "https://rukminim2.flixcart.com/image/612/612/xif0q/shirt/n/k/j/l-sh-patta-lgreen-u-turn-original-imahgs36mjasgwhy.jpeg?q=70",
+      "rating": "10",
+      "category": "mens",
+      "id": "d5UQYHVFciE"
+    }
+  ],
+  "womens": [
+    {
+      "id": "",
+      "name": "",
+      "price": "",
+      "description": "",
+      "image": "",
+      "rating": "",
+      "category": ""
+    }
+  ],
+  "kids": [
+    {
+      "id": "",
+      "name": "",
+      "price": "",
+      "description": "",
+      "image": "",
+      "rating": "",
+      "category": ""
+    }
+  ],
+  "electronics": [
+    {
+      "id": "",
+      "name": "",
+      "price": "",
+      "description": "",
+      "image": "",
+      "rating": "",
+      "category": ""
+    },
+    {
+      "name": "Mouse",
+      "price": "99",
+      "description": "ksaskjxkajbss biuwdiqwi iudwiwhq",
+      "image": "https://rukminim2.flixcart.com/image/612/612/xif0q/mouse/s/d/0/tc-m500-flipkart-smartbuy-original-imahbj6w5qcf2f3b.jpeg?q=70",
+      "rating": "9",
+      "category": "electronics",
+      "id": "agD08hUr4lU"
+    },
+    {
+      "name": "Mouse",
+      "price": "99",
+      "description": "ksaskjxkajbss biuwdiqwi iudwiwhq",
+      "image": "https://rukminim2.flixcart.com/image/612/612/xif0q/mouse/s/d/0/tc-m500-flipkart-smartbuy-original-imahbj6w5qcf2f3b.jpeg?q=70",
+      "rating": "9",
+      "category": "electronics",
+      "id": "vNxzUe3hiTU"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}
