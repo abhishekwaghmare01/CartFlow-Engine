@@ -1,13 +1,13 @@
 {
   "mens": [
     {
-      "id": "",
-      "name": "",
-      "price": "",
-      "description": "",
-      "image": "",
-      "rating": "",
-      "category": ""
+      "name": "Shirt",
+      "price": "599",
+      "description": "jashabsahshbhab",
+      "image": "https://rukminim2.flixcart.com/image/612/612/xif0q/shirt/n/k/j/l-sh-patta-lgreen-u-turn-original-imahgs36mjasgwhy.jpeg?q=70",
+      "rating": "10",
+      "category": "mens",
+      "id": "d5UQYHVFciE"
     },
     {
       "name": "Shirt",
@@ -16,41 +16,59 @@
       "image": "https://rukminim2.flixcart.com/image/612/612/xif0q/shirt/n/k/j/l-sh-patta-lgreen-u-turn-original-imahgs36mjasgwhy.jpeg?q=70",
       "rating": "10",
       "category": "mens",
-      "id": "d5UQYHVFciE"
+      "id": "d5UQYHVFciF"
+    },
+    {
+      "name": "Shirt",
+      "price": "599",
+      "description": "jashabsahshbhab",
+      "image": "https://rukminim2.flixcart.com/image/612/612/xif0q/shirt/n/k/j/l-sh-patta-lgreen-u-turn-original-imahgs36mjasgwhy.jpeg?q=70",
+      "rating": "10",
+      "category": "mens",
+      "id": "d5UQYHVFciG"
+    },
+    {
+      "name": "Shirt",
+      "price": "599",
+      "description": "jashabsahshbhab",
+      "image": "https://rukminim2.flixcart.com/image/612/612/xif0q/shirt/n/k/j/l-sh-patta-lgreen-u-turn-original-imahgs36mjasgwhy.jpeg?q=70",
+      "rating": "10",
+      "category": "mens",
+      "id": "d5UQYHVFciH"
     }
   ],
   "womens": [
     {
-      "id": "",
-      "name": "",
-      "price": "",
-      "description": "",
-      "image": "",
-      "rating": "",
-      "category": ""
+      "name": "Kurta",
+      "price": "497",
+      "image": "https://rukminim2.flixcart.com/image/612/612/xif0q/ethnic-set/d/n/q/s-hrs-10006-klosia-original-imagyjcgzt8vythg.jpeg?q=70",
+      "rating": "7",
+      "description": "Girls kurta",
+      "category": "womens",
+      "id": "EXjRK2j8EbU"
+    },
+    {
+      "name": "Kurta set",
+      "price": "356",
+      "image": "https://rukminim2.flixcart.com/image/612/612/xif0q/ethnic-set/d/z/u/l-ethnic-set123-glitzstyle-original-imahk77gn7nvwnfs.jpeg?q=70",
+      "rating": "6",
+      "description": "Tibra Attire Women Cotton Blend Kurti Pant Dupatta Set",
+      "category": "womens",
+      "id": "75Zi6GeiiGQ"
     }
   ],
   "kids": [
     {
-      "id": "",
-      "name": "",
-      "price": "",
-      "description": "",
-      "image": "",
-      "rating": "",
-      "category": ""
+      "name": "Shirt",
+      "price": "599",
+      "description": "jashabsahshbhab",
+      "image": "https://rukminim2.flixcart.com/image/612/612/xif0q/shirt/n/k/j/l-sh-patta-lgreen-u-turn-original-imahgs36mjasgwhy.jpeg?q=70",
+      "rating": "10",
+      "category": "mens",
+      "id": "d5UQVFciH"
     }
   ],
   "electronics": [
-    {
-      "id": "",
-      "name": "",
-      "price": "",
-      "description": "",
-      "image": "",
-      "rating": "",
-      "category": ""
-    },
     {
       "name": "Mouse",
       "price": "99",
@@ -68,6 +86,24 @@
       "rating": "9",
       "category": "electronics",
       "id": "vNxzUe3hiTU"
+    },
+    {
+      "name": "Smart Watch",
+      "price": "999",
+      "image": "https://rukminim2.flixcart.com/image/612/612/xif0q/smartwatch/x/j/s/-original-imah4eddxhvzpxhc.jpeg?q=70",
+      "rating": "10",
+      "description": "fireboalt smart watch",
+      "category": "electronics",
+      "id": "8BHsltuBrMk"
+    },
+    {
+      "name": "Cycle",
+      "price": "999",
+      "image": "https://rukminim2.flixcart.com/image/612/612/xif0q/electric-cycle/b/a/y/amped-27-5t-electric-cycle-up-to-35km-range-lightweight-stylish-original-imahhbf32bpkhcms.jpeg?q=70",
+      "rating": "9",
+      "description": "Electrical cycle ",
+      "category": "electronics",
+      "id": "0jj5LUubPFQ"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"
