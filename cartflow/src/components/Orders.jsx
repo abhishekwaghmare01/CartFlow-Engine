@@ -1,9 +1,17 @@
 import React, { useContext } from "react";
 import { CartContext } from "../context/CartContextProvider";
 import "../styles/orders.css";
+import { toast } from "react-toastify";
+import { Link } from "react-router-dom";
 
 export default function Orders() {
   const { cart, totalPrice } = useContext(CartContext);
+  function handleComfirmOrder() {
+    toast.success("Order Comfirmed successfully 🎉", {
+      position: "top-right",
+      autoClose: 1500,
+    })
+  }
 
   return (
     <div className="orders-container">
@@ -29,8 +37,10 @@ export default function Orders() {
       <div className="total-amount">
         Total Amount: ₹{totalPrice}
       </div>
+      <Link to='/home'>
+        <button className="confirm-btn" onClick={handleComfirmOrder}>Confirm Order</button>
 
-      <button className="confirm-btn">Confirm Order</button>
+      </Link>
     </div>
   );
 }

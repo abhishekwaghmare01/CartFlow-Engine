@@ -40,7 +40,7 @@ export default function CartContextProvider({ children }) {
     setCart(updatedCart)
 
   } 
-  // Step 3: If product does NOT exist → add new product
+  
   else {
 
     let newProduct = {
@@ -51,13 +51,13 @@ export default function CartContextProvider({ children }) {
     setCart([...cart, newProduct])
   }
 }
-  // 🔥 REMOVE ITEM
+ 
   function removeFromCart(id) {
     let updatedCart = cart.filter(item => item.id !== id)
     setCart(updatedCart)
   }
 
-  // 🔥 UPDATE QTY
+
   function updateQty(id, type) {
 
     let updatedCart = cart.map(item => {
@@ -79,10 +79,10 @@ export default function CartContextProvider({ children }) {
     setCart(updatedCart)
   }
 
-  // 🔥 TOTAL ITEMS
+
   let totalItems = cart.reduce((acc, item) => acc + item.qty, 0)
 
-  // 🔥 TOTAL PRICE
+
   let totalPrice = cart.reduce((acc, item) => acc + item.price * item.qty, 0)
 
   return (

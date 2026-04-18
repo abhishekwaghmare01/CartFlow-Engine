@@ -6,6 +6,7 @@ import Cart from "./components/Cart"
 import Orders from "./components/Orders"
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import Footer from "./components/Footer"
 
 
 export default function App() {
@@ -24,7 +25,7 @@ export default function App() {
         theme="dark"
       />
       <Routes>
-        {/* 🔥 ONE DYNAMIC ROUTE */}
+    
         <Route path="/" element={<Home />} />
         <Route path="/:category" element={<Home />} />
 
@@ -33,6 +34,7 @@ export default function App() {
         <Route path="/orders" element={<Orders />} />
 
       </Routes>
+      <Footer/>
     </>
   )
 }

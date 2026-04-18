@@ -9,7 +9,6 @@ export default function ProductContextProvider({ children }) {
   const [filter, setFilter] = useState('')
   const [category, setCategory] = useState('all')
 
-  // 🔥 FETCH BASED ON CATEGORY
   useEffect(() => {
 
     async function fetchData() {
@@ -17,7 +16,7 @@ export default function ProductContextProvider({ children }) {
       let data = []
 
       if (category === "all") {
-        // 🔥 merge all categories
+       
         let res1 = await fetch("http://localhost:3000/mens")
         let res2 = await fetch("http://localhost:3000/womens")
         let res3 = await fetch("http://localhost:3000/kids")
@@ -31,7 +30,7 @@ export default function ProductContextProvider({ children }) {
         data = [...mens, ...womens, ...kids, ...electronics]
 
       } else {
-        // 🔥 fetch only selected category
+      
         let res = await fetch(`http://localhost:3000/${category}`)
         data = await res.json()
       }
@@ -43,12 +42,12 @@ export default function ProductContextProvider({ children }) {
 
   }, [category])
 
-  // 🔥 SEARCH
+
   let filteredProducts = products.filter(p =>
     p.name?.toLowerCase().includes(search.toLowerCase())
   )
 
-  // 🔥 SORT
+
   if (filter === "low") {
     filteredProducts.sort((a, b) => a.price - b.price)
   }
