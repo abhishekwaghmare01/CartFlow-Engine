@@ -9,38 +9,51 @@ export default function ProductContextProvider({ children }) {
   const [filter, setFilter] = useState('')
   const [category, setCategory] = useState('all')
 
-  useEffect(() => {
+ useEffect(() => {
 
-    async function fetchData() {
+  async function fetchData() {
 
+    try {
       let data = []
 
       if (category === "all") {
-       
-        let res1 = await fetch("http://localhost:3000/mens")
-        let res2 = await fetch("http://localhost:3000/womens")
-        let res3 = await fetch("http://localhost:3000/kids")
-        let res4 = await fetch("http://localhost:3000/electronics")
 
-        let mens = await res1.json()
-        let womens = await res2.json()
-        let kids = await res3.json()
-        let electronics = await res4.json()
+        const urls = [
+          "http://localhost:3000/mens",
+          "http://localhost:3000/womens",
+          "http://localhost:3000/kids",
+          "http://localhost:3000/electronics"
+        ]
 
-        data = [...mens, ...womens, ...kids, ...electronics]
+        // 🔥 parallel API calls
+        const responses = await Promise.all(
+          urls.map(url => fetch(url))
+        )
+
+        // 🔥 convert all to JSON
+        const results = await Promise.all(
+          responses.map(res => res.json())
+        )
+
+        // 🔥 flatten array
+        data = results.flat()
 
       } else {
-      
-        let res = await fetch(`http://localhost:3000/${category}`)
+
+        const res = await fetch(`http://localhost:3000/${category}`)
         data = await res.json()
       }
 
       setProducts(data)
+
+    } catch (error) {
+      console.error("Error fetching data:", error)
     }
+  }
 
-    fetchData()
+  fetchData()
 
-  }, [category])
+}, [category])
 
 
   let filteredProducts = products.filter(p =>

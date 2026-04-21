@@ -1,0 +1,48 @@
+.user-container {
+    padding: 40px;
+    background: #f4f6f9;
+    min-height: 100vh;
+}
+
+.user-container h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #333;
+}
+
+/* TABLE */
+.user-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+/* HEADER */
+.user-table thead {
+    background: #333545;
+    color: white;
+}
+
+.user-table th,
+.user-table td {
+    padding: 14px;
+    text-align: center;
+}
+
+/* ROWS */
+.user-table tbody tr {
+    border-bottom: 1px solid #eee;
+    transition: 0.2s;
+}
+
+.user-table tbody tr:hover {
+    background: #f1f1f1;
+}
+
+/* LAST ROW */
+.user-table tbody tr:last-child {
+    border-bottom: none;
+}

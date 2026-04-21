@@ -7,12 +7,19 @@ import Orders from "./components/Orders"
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import Footer from "./components/Footer"
+import Login from "./components/Login"
+import ProtectedRoute from "./components/ProtectedRoute"
+import Register from "./components/Register"
+import Updateproduct from "./components/Updateproduct"
+import Userinfo from "./components/Userinfo"
+import UpdateProduct from "./components/Updateproduct"
 
 
 export default function App() {
+
   return (
     <>
-      <Navbar />
+      <Navbar/>
       
       <ToastContainer
         position="top-right"
@@ -24,14 +31,24 @@ export default function App() {
         draggable
         theme="dark"
       />
-      <Routes>
-    
+       <Routes>
+
         <Route path="/" element={<Home />} />
         <Route path="/:category" element={<Home />} />
 
-        <Route path="/cart" element={<Cart />} />
-        <Route path="/addprod" element={<Addproduct />} />
-        <Route path="/orders" element={<Orders />} />
+        {/* 🔒 PROTECTED */}
+        <Route element={<ProtectedRoute />}>
+
+          <Route path="/cart" element={<Cart />} />
+          <Route path="/orders" element={<Orders />} />
+          <Route path="/addprod" element={<Addproduct />} />
+
+        </Route>
+
+        <Route path="/login" element={<Login />} />
+        <Route path="/register" element={<Register />} />
+      <Route path="/updateprod/:id/:category" element={<UpdateProduct />} />
+      <Route path='/userinfo' element={<Userinfo/>}/>
 
       </Routes>
       <Footer/>

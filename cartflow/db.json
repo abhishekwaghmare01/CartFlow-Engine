@@ -1,40 +1,13 @@
 {
   "mens": [
     {
-      "name": "Shirt",
-      "price": "599",
+      "name": "plain shirt ",
+      "price": "100",
       "description": "jashabsahshbhab",
       "image": "https://rukminim2.flixcart.com/image/612/612/xif0q/shirt/n/k/j/l-sh-patta-lgreen-u-turn-original-imahgs36mjasgwhy.jpeg?q=70",
       "rating": "10",
       "category": "mens",
       "id": "d5UQYHVFciE"
-    },
-    {
-      "name": "Shirt",
-      "price": "599",
-      "description": "jashabsahshbhab",
-      "image": "https://rukminim2.flixcart.com/image/612/612/xif0q/shirt/n/k/j/l-sh-patta-lgreen-u-turn-original-imahgs36mjasgwhy.jpeg?q=70",
-      "rating": "10",
-      "category": "mens",
-      "id": "d5UQYHVFciF"
-    },
-    {
-      "name": "Shirt",
-      "price": "599",
-      "description": "jashabsahshbhab",
-      "image": "https://rukminim2.flixcart.com/image/612/612/xif0q/shirt/n/k/j/l-sh-patta-lgreen-u-turn-original-imahgs36mjasgwhy.jpeg?q=70",
-      "rating": "10",
-      "category": "mens",
-      "id": "d5UQYHVFciG"
-    },
-    {
-      "name": "Shirt",
-      "price": "599",
-      "description": "jashabsahshbhab",
-      "image": "https://rukminim2.flixcart.com/image/612/612/xif0q/shirt/n/k/j/l-sh-patta-lgreen-u-turn-original-imahgs36mjasgwhy.jpeg?q=70",
-      "rating": "10",
-      "category": "mens",
-      "id": "d5UQYHVFciH"
     }
   ],
   "womens": [
@@ -70,18 +43,9 @@
   ],
   "electronics": [
     {
-      "name": "Mouse",
-      "price": "99",
-      "description": "ksaskjxkajbss biuwdiqwi iudwiwhq",
-      "image": "https://rukminim2.flixcart.com/image/612/612/xif0q/mouse/s/d/0/tc-m500-flipkart-smartbuy-original-imahbj6w5qcf2f3b.jpeg?q=70",
-      "rating": "9",
-      "category": "electronics",
-      "id": "agD08hUr4lU"
-    },
-    {
-      "name": "Mouse",
-      "price": "99",
-      "description": "ksaskjxkajbss biuwdiqwi iudwiwhq",
+      "name": "Mac Mouse",
+      "price": "498",
+      "description": "Mouse ksaskjxkajbss biuwdiqwi iudwiwhq",
       "image": "https://rukminim2.flixcart.com/image/612/612/xif0q/mouse/s/d/0/tc-m500-flipkart-smartbuy-original-imahbj6w5qcf2f3b.jpeg?q=70",
       "rating": "9",
       "category": "electronics",

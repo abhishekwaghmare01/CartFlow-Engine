@@ -8,50 +8,50 @@ export default function CartContextProvider({ children }) {
     return JSON.parse(localStorage.getItem("cart")) || []
   })
 
-  
+
   useEffect(() => {
     localStorage.setItem("cart", JSON.stringify(cart))
   }, [cart])
 
- 
+
   function addToCart(product) {
 
-  
-  let exist = cart.find(function(item) {
-    return item.id === product.id
-  })
 
- 
-  if (exist) {
-
-    let updatedCart = cart.map(function(item) {
-
-      if (item.id === product.id) {
-        return {
-          ...item,
-          qty: item.qty + 1
-        }
-      } else {
-        return item
-      }
-
+    let exist = cart.find(function (item) {
+      return item.id === product.id
     })
 
-    setCart(updatedCart)
 
-  } 
-  
-  else {
+    if (exist) {
 
-    let newProduct = {
-      ...product,
-      qty: 1
+      let updatedCart = cart.map(function (item) {
+
+        if (item.id === product.id) {
+          return {
+            ...item,
+            qty: item.qty + 1
+          }
+        } else {
+          return item
+        }
+
+      })
+
+      setCart(updatedCart)
+
     }
 
-    setCart([...cart, newProduct])
+    else {
+
+      let newProduct = {
+        ...product,
+        qty: 1
+      }
+
+      setCart([...cart, newProduct])
+    }
   }
-}
- 
+
   function removeFromCart(id) {
     let updatedCart = cart.filter(item => item.id !== id)
     setCart(updatedCart)

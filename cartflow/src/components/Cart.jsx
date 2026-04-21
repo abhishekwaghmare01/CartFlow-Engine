@@ -26,6 +26,7 @@ const handleRemove = (id) => {
   });
 };
 
+
   return (
     <div className="cart-container">
 
