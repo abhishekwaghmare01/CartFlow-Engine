@@ -13,6 +13,7 @@ import Register from "./components/Register"
 import Updateproduct from "./components/Updateproduct"
 import Userinfo from "./components/Userinfo"
 import UpdateProduct from "./components/Updateproduct"
+import OrderHistory from "./components/OrderHistory"
 
 
 export default function App() {
@@ -41,6 +42,7 @@ export default function App() {
 
           <Route path="/cart" element={<Cart />} />
           <Route path="/orders" element={<Orders />} />
+          <Route path="/history" element={<OrderHistory />} />
           <Route path="/addprod" element={<Addproduct />} />
 
         </Route>

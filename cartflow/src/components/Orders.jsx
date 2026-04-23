@@ -5,12 +5,32 @@ import { toast } from "react-toastify";
 import { Link } from "react-router-dom";
 
 export default function Orders() {
-  const { cart, totalPrice } = useContext(CartContext);
+  const { cart, totalPrice,clearCart} = useContext(CartContext);
+  const user = JSON.parse(localStorage.getItem('currentUser'))
+
   function handleComfirmOrder() {
-    toast.success("Order Comfirmed successfully 🎉", {
-      position: "top-right",
-      autoClose: 1500,
-    })
+
+    if (!user) return
+
+    const orderKey = `orders_${user.email}`
+
+    let oldOrders = JSON.parse(localStorage.getItem(orderKey)) || []
+
+    const newOrder = {
+      id: Date.now(),
+      items: cart,
+      total: totalPrice,
+      date: new Date().toLocaleString()
+    }
+
+    oldOrders.push(newOrder)
+
+    localStorage.setItem(orderKey, JSON.stringify(oldOrders))
+
+    // 🔥 CLEAR CART AFTER ORDER
+    clearCart()
+
+    toast.success("Order Confirmed 🎉")
   }
 
   return (

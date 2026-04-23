@@ -8,10 +8,10 @@ export default function Navbar() {
 
     const { setSearch, setFilter, setCategory } = useContext(ProductContext)
     const { totalItems } = useContext(CartContext)
-    
+
     const navigate = useNavigate()
 
-    const user =  JSON.parse(localStorage.getItem("currentUser"))
+    const user = JSON.parse(localStorage.getItem("currentUser"))
 
     // 🔥 logout function
     function handleLogout() {
@@ -40,8 +40,9 @@ export default function Navbar() {
                 <div className="nav-right">
                     {user?.role === "admin" && (
                         <>
-                        <Link to="/addprod" className="icon">+ Add Product</Link>
-                        <Link to="/userinfo" className="icon">👨🏻‍💼User Informations</Link>
+                            <Link to="/addprod" className="icon">+ Add Product</Link>
+                            <Link to="/userinfo" className="icon">👨🏻‍💼User Informations</Link>
+
 
                         </>
                     )}
@@ -51,6 +52,9 @@ export default function Navbar() {
                             <>
                                 <Link to="/cart" className="icon">🛒Cart ({totalItems})</Link>
                                 <Link to="/orders" className="icon">📦Orders</Link>
+                                <Link to="/history" className="icon">
+                                    📦 <span>Orders History</span>
+                                </Link>
                             </>
 
                         )

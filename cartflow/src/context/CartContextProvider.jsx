@@ -4,18 +4,24 @@ export const CartContext = createContext()
 
 export default function CartContextProvider({ children }) {
 
+  const currentUser = JSON.parse(localStorage.getItem("currentUser"))
+
+  const storageKey = currentUser
+    ? `cart_${currentUser.email}`
+    : "cart_guest"
+
   const [cart, setCart] = useState(() => {
-    return JSON.parse(localStorage.getItem("cart")) || []
+    return JSON.parse(localStorage.getItem(storageKey)) || []
   })
 
 
+  // ✅ SAVE CART PER USER
   useEffect(() => {
-    localStorage.setItem("cart", JSON.stringify(cart))
-  }, [cart])
+    localStorage.setItem(storageKey, JSON.stringify(cart))
+  }, [cart, storageKey])
 
 
   function addToCart(product) {
-
 
     let exist = cart.find(function (item) {
       return item.id === product.id
@@ -79,6 +85,10 @@ export default function CartContextProvider({ children }) {
     setCart(updatedCart)
   }
 
+    // ✅ CLEAR CART (after order)
+  function clearCart() {
+    setCart([])
+  }
 
   let totalItems = cart.reduce((acc, item) => acc + item.qty, 0)
 
@@ -92,7 +102,8 @@ export default function CartContextProvider({ children }) {
       removeFromCart,
       updateQty,
       totalItems,
-      totalPrice
+      totalPrice,
+      clearCart
     }}>
       {children}
     </CartContext.Provider>

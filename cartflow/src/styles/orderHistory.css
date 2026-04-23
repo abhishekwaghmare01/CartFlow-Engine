@@ -1,0 +1,61 @@
+/* PAGE */
+.history-container {
+    padding: 30px;
+    background: #f4f6f8;
+    min-height: 100vh;
+}
+
+/* TITLE */
+.history-container h2 {
+    margin-bottom: 20px;
+    color: #222;
+}
+
+/* EMPTY */
+.empty {
+    text-align: center;
+    color: gray;
+    margin-top: 40px;
+}
+
+/* ORDER BOX */
+.order-box {
+    background: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.08);
+}
+
+/* HEADER */
+.order-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    font-weight: 500;
+    color: #444;
+}
+
+/* ITEM */
+.order-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+}
+
+/* IMAGE */
+.order-item img {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+}
+
+/* TOTAL */
+.order-total {
+    text-align: right;
+    margin-top: 15px;
+    font-weight: bold;
+    color: #ff4d4d;
+}
